@@ -302,7 +302,7 @@ button {
   border-width: 1px;
   border-color: var(--border-color-portfolio);
 
-  margin-bottom: 30px;
+  margin: 0px;
 }
 .portfolio-style-list h2 {
   font-weight: 700;
@@ -310,7 +310,8 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color-primary);
-  margin: 20px 24px 4px 24px;
+  padding: 20px 24px 2px 24px;
+  margin: 0px;
 }
 .portfolio-style-list p {
   font-weight: 400;
@@ -319,7 +320,8 @@ button {
   letter-spacing: 0.03em;
   color: var(--text-color-seccondary);
 
-  margin: 0px 24px 20px 24px;
+  padding: 2px 24px 30px 24px;
+  margin: 0px;
 }
 .portfolio-button-list button {
   height: 48px;
