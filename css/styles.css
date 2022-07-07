@@ -177,7 +177,7 @@ button {
   color: var(--text-color-seccondary);
 }
 .features ul {
-  width: 1170px;
+  /* width: 1170px; */
   height: 101px;
 
   padding: 94px 215px 94px 215px;
@@ -211,7 +211,7 @@ button {
   margin: 0px;
 }
 .activities ul {
-  width: 1170px;
+  /* width: 1170px; */
   padding: 25px 215px 94px 215px;
   margin: 0px;
 
@@ -253,7 +253,7 @@ button {
   color: var(--text-color-seccondary);
 }
 .team ul {
-  width: 1170px;
+  /* width: 1170px; */
   padding: 25px 215px 94px 215px;
   margin: 0px;
 
@@ -280,7 +280,7 @@ button {
   list-style-type: none;
 }
 .portfolio-button-list {
-  width: 611px;
+  /* width: 611px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
