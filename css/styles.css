@@ -53,7 +53,9 @@ button {
   height: 80px;
 
   display: flex;
-  padding-bottom: 0%;
+  align-items: center;
+  justify-content: space-between;
+  /*padding-bottom: 0%;*/
 }
 .header-style li {
   list-style-type: none;
@@ -76,15 +78,19 @@ button {
 .contacts-style a:focus {
   color: var(--text-color-accent);
 }
-.navigations-style ul,
-.contacts-style {
-  padding-top: 35px;
-  padding-left: 40px;
-  margin: 0%;
+.navigations-style ul {
+  width: 360px;
+  padding-left: 0px;
 }
-.navigations-style li,
+.navigations-style li {
+  padding: 0 25px;
+  margin: 0 auto;
+}
+.contacts-style {
+  padding-right: 215px;
+}
 .contacts-style li {
-  padding-right: 50px;
+  padding-left: 50px;
 }
 
 /*стиль логотипа цвета задаются без переменных*/
@@ -96,8 +102,7 @@ button {
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
-
-  padding: 24px 53px 25px 215px;
+  padding-left: 215px;
 }
 .logo-style span {
   color: #000000;
@@ -170,16 +175,27 @@ button {
   color: var(--text-color-seccondary);
 }
 .features ul {
+  width: 1170px;
+  height: 101px;
+
   margin-top: 94px;
   margin-bottom: 94px;
   padding-left: 215px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .features li {
   list-style-type: none;
-  display: inline-block;
   width: 270px;
   height: 101px;
-  margin-right: 30px;
+}
+.features h3 {
+  margin: 0px;
+}
+.features p {
+  margin: 10px 0 0 0;
 }
 /*Стили секции виды деятельности*/
 .activities h2 {
@@ -193,17 +209,20 @@ button {
   margin-bottom: 50px;
 }
 .activities ul {
+  width: 1170px;
   padding-left: 215px;
+  margin-top: 0;
   margin-bottom: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .activities li {
   list-style-type: none;
-  display: inline-block;
-  margin-right: 30px;
 }
 /*Стили секции нашей команды*/
 .team {
-  width: 1600px;
+  block-size: 1600px;
   height: 648px;
   background-color: var(--bgc-seccondary);
 }
@@ -233,14 +252,17 @@ button {
   color: var(--text-color-seccondary);
 }
 .team ul {
-  padding-left: 215px;
+  width: 1170px;
+  padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 94px;
+  margin-left: 215px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .team li {
   list-style-type: none;
-  display: inline-block;
-  margin-right: 30px;
   background-color: var(--bgc-primary);
 }
 .team h3,
@@ -287,34 +309,60 @@ button {
 
 /*Стили подвала*/
 .footer-style {
+  box-sizing: border-box;
+  width: 1600px;
+  height: 252px;
   background-color: var(--bgc-footer);
   display: block;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.footer-style li {
+.adress-style {
+  font-style: normal;
+}
+.adress-style ul {
+  margin: 0px;
+  padding-left: 215px;
+}
+.adress-style li {
+  padding-bottom: 9px;
   list-style-type: none;
 }
 .adress-style {
   font-size: 14px;
 }
 .adress-style a {
+  margin-top: 60px;
+
   color: var(--text-color-futer-adr);
+}
+.adress-style span {
+  color: var(--text-color-footer);
 }
 .adress-style a:link,
 .adress-style a:visited {
   text-decoration: none;
 }
 .adress-style a:hover,
-.adress-style a:focus {
+.adress-style a:focus,
+.adress-style span:hover,
+.adress-style span:focus {
   color: var(--text-color-accent);
   text-decoration: none;
 }
-.footer-style p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+.logo-style-footer {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--text-color-footer);
+  color: #2196f3;
+  text-decoration: none;
+  padding-left: 215px;
+  margin-bottom: 20px;
 }
-.footer-style span {
+.logo-style-footer span {
   color: var(--text-color-footer);
 }
