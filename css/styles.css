@@ -23,6 +23,8 @@
   --text-color-footer: #ffffff;
   /*цвет текста адреса футера*/
   --text-color-futer-adr: rgba(255, 255, 255, 0.6);
+  /*цвет рамки элементов портфолио*/
+  --border-color-portfolio: #eeeeee;
 }
 
 body {
@@ -178,9 +180,8 @@ button {
   width: 1170px;
   height: 101px;
 
-  margin-top: 94px;
-  margin-bottom: 94px;
-  padding-left: 215px;
+  padding: 94px 215px 94px 215px;
+  margin: 0px;
 
   display: flex;
   align-items: center;
@@ -205,14 +206,15 @@ button {
   letter-spacing: 0.03em;
   color: var(--text-color-primary);
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 50px;
+
+  padding: 94px 215px 25px 215px;
+  margin: 0px;
 }
 .activities ul {
   width: 1170px;
-  padding-left: 215px;
-  margin-top: 0;
-  margin-bottom: 94px;
+  padding: 25px 215px 94px 215px;
+  margin: 0px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -222,8 +224,8 @@ button {
 }
 /*Стили секции нашей команды*/
 .team {
-  block-size: 1600px;
-  height: 648px;
+  width: 1600px;
+
   background-color: var(--bgc-seccondary);
 }
 .team h2 {
@@ -233,9 +235,8 @@ button {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--text-color-primary);
-  padding-top: 94px;
-  margin-top: 0px;
-  margin-bottom: 50px;
+  padding: 94px 215px 25px 215px;
+  margin: 0px;
 }
 .team h3 {
   font-weight: 500;
@@ -253,10 +254,9 @@ button {
 }
 .team ul {
   width: 1170px;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 94px;
-  margin-left: 215px;
+  padding: 25px 215px 94px 215px;
+  margin: 0px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -272,8 +272,37 @@ button {
 
 /*Стили основного контента portfolio.html*/
 
+.portfolio-style-title {
+  display: none;
+}
+.portfolio-button-list li,
 .portfolio-style-list li {
   list-style-type: none;
+}
+.portfolio-button-list {
+  width: 611px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 94px 495px 25px 494px;
+  margin: 0px;
+}
+
+.portfolio-style-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 215px 64px 215px;
+  margin: 0px;
+}
+.portfolio-style-list li {
+  border-width: 1px;
+  border-color: var(--border-color-portfolio);
+
+  margin-bottom: 30px;
 }
 .portfolio-style-list h2 {
   font-weight: 700;
@@ -281,6 +310,7 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color-primary);
+  margin: 20px 24px 4px 24px;
 }
 .portfolio-style-list p {
   font-weight: 400;
@@ -288,9 +318,15 @@ button {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color-seccondary);
+
+  margin: 0px 24px 20px 24px;
 }
-.portfolio-style-list button {
+.portfolio-button-list button {
+  height: 48px;
   cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+  padding: 6px 22px;
 
   background-color: var(--bgc-seccondary);
 
@@ -301,8 +337,8 @@ button {
   color: var(--text-color-primary);
 }
 
-.portfolio-style-list button:hover,
-.portfolio-style-list button:focus {
+.portfolio-button-list button:hover,
+.portfolio-button-list button:focus {
   background-color: var(--bgc-button-accent);
   color: var(--text-color-button-accent);
 }
