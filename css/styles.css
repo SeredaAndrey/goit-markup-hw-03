@@ -23,6 +23,8 @@
   --text-color-footer: #ffffff;
   /*цвет текста адреса футера*/
   --text-color-futer-adr: rgba(255, 255, 255, 0.6);
+  /* цвет рамки шапки */
+  --border-color-header: #ECECEC
   /*цвет рамки элементов портфолио*/
   --border-color-portfolio: #eeeeee;
 }
@@ -35,10 +37,25 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color-primary);
+  margin: 0;
+}
 
-  width: 1600px;
-  margin-top: 0%;
-  padding-top: 0%;
+.container {
+  width: 1200px;
+
+  /* раскомментировать при кодинге */
+  outline: 2px solid red;
+  background-color: orange; 
+  /* раскомментировать при кодинге */
+
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.marg-top-plas {
+  margin-top: 94px;
 }
 button {
   font: inherit;
@@ -46,22 +63,26 @@ button {
 }
 
 /*Стили шапки*/
+.border-header-plus {
+  border-bottom: 1px solid black;
+  /* var(--border-color-header); */
+}
 .header-style {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color-primary);
-  height: 80px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /*padding-bottom: 0%;*/
+  min-height: 80px;
 }
 .header-style li {
   list-style-type: none;
-  display: inline;
+}
+.header-style-flex {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigations-style a:link,
@@ -88,9 +109,9 @@ button {
   padding: 0 25px;
   margin: 0 auto;
 }
-.contacts-style {
+/* .contacts-style {
   padding-right: 215px;
-}
+} */
 .contacts-style li {
   padding-left: 50px;
 }
@@ -104,7 +125,7 @@ button {
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
-  padding-left: 215px;
+  /* padding-left: 215px; */
 }
 .logo-style span {
   color: #000000;
@@ -114,11 +135,9 @@ button {
 /*стили героя*/
 .hero-style {
   background-color: var(--bgc-hero);
-
   height: 600px;
-  width: 1600px;
 }
-.hero-style H1 {
+.hero-style h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -134,7 +153,7 @@ button {
 .hero-style button {
   cursor: pointer;
   border: 0px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   border-radius: 4px;
 
@@ -145,7 +164,7 @@ button {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  margin-left: 700px;
+  /* margin-left: 700px; */
 }
 
 .hero-style button:hover,
@@ -180,8 +199,8 @@ button {
   /* width: 1170px; */
   height: 101px;
 
-  padding: 94px 215px 94px 215px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 
   display: flex;
   align-items: center;
@@ -207,24 +226,23 @@ button {
   color: var(--text-color-primary);
   text-align: center;
 
-  padding: 94px 215px 25px 215px;
+  padding-top: 0;
+  padding-bottom: 50px;
   margin: 0px;
 }
 .activities ul {
-  /* width: 1170px; */
-  padding: 25px 215px 94px 215px;
-  margin: 0px;
-
+  padding: 0 0 94px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
 }
 .activities li {
   list-style-type: none;
 }
 /*Стили секции нашей команды*/
 .team {
-  width: 1600px;
+  /* width: 1600px; */
 
   background-color: var(--bgc-seccondary);
 }
@@ -254,7 +272,7 @@ button {
 }
 .team ul {
   /* width: 1170px; */
-  padding: 25px 215px 94px 215px;
+  padding: 25px 0 94px 0;
   margin: 0px;
 
   display: flex;
@@ -283,10 +301,13 @@ button {
   /* width: 611px; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 94px 495px 25px 494px;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 0px;
   margin: 0px;
+}
+.portfolio-button-list li {
+  margin: 0 4px 0 4px;
 }
 
 .portfolio-style-list {
@@ -295,8 +316,8 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 215px 64px 215px;
-  margin: 0px;
+  padding: 0 0 94px 0;
+  margin: 50px 0 0 0;
 }
 .portfolio-style-list li {
   border-width: 1px;
@@ -346,9 +367,12 @@ button {
 }
 
 /*Стили подвала*/
+.container-left {
+  text-align: left;
+}
 .footer-style {
   box-sizing: border-box;
-  width: 1600px;
+  /* width: 1600px; */
   height: 252px;
   background-color: var(--bgc-footer);
   display: block;
@@ -362,7 +386,7 @@ button {
 }
 .adress-style ul {
   margin: 0px;
-  padding-left: 215px;
+  padding: 0;
 }
 .adress-style li {
   padding-bottom: 9px;
@@ -398,7 +422,7 @@ button {
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
-  padding-left: 215px;
+  /* padding-left: 215px; */
   margin-bottom: 20px;
 }
 .logo-style-footer span {
