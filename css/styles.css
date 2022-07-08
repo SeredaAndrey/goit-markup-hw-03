@@ -24,7 +24,7 @@
   /*цвет текста адреса футера*/
   --text-color-futer-adr: rgba(255, 255, 255, 0.6);
   /* цвет рамки шапки */
-  --border-color-header: #ECECEC
+  --border-color-header: #ececec;
   /*цвет рамки элементов портфолио*/
   --border-color-portfolio: #eeeeee;
 }
@@ -64,8 +64,7 @@ button {
 
 /*Стили шапки*/
 .border-header-plus {
-  border-bottom: 1px solid black;
-  /* var(--border-color-header); */
+  border-bottom: 1px solid var(--border-color-header);
 }
 .header-style {
   font-weight: 500;
@@ -282,6 +281,10 @@ button {
 .team li {
   list-style-type: none;
   background-color: var(--bgc-primary);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team h3,
 .team p {
@@ -316,14 +319,12 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 94px 0;
+  padding: 0 0 64px 0;
   margin: 50px 0 0 0;
 }
 .portfolio-style-list li {
-  border-width: 1px;
-  border-color: var(--border-color-portfolio);
-
-  margin: 0px;
+  border: 1px solid var(--border-color-portfolio);
+  margin: 0 0 30px 0;
 }
 .portfolio-style-list h2 {
   font-weight: 700;
@@ -415,6 +416,7 @@ button {
   text-decoration: none;
 }
 .logo-style-footer {
+  display: block;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
