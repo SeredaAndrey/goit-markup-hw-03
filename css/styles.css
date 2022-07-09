@@ -57,17 +57,6 @@ body {
   padding: 0;
 }
 
-/* .padding-t {
-  padding-top: 94px;
-}
-.padding-l-r {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.padding-b {
-  padding-bottom: 94px;
-} */
-
 button {
   font: inherit;
   font-family: "Roboto";
@@ -79,6 +68,7 @@ button {
 .padding-header {
   padding-left: 15px;
   padding-right: 15px;
+  min-height: 80px;
 }
 .header-style {
   font-weight: 500;
@@ -90,15 +80,16 @@ button {
   min-height: 80px;
 }
 .header-style .header-item {
-  margin: 0 50px 0 0;
   padding: 0;
+  margin: 0;
 }
-.header-style .header-item:last-child {
-  margin-right: 0;
+.header-style .header-item:not(:last-child) {
+  margin-right: 50px;
 }
 .header-style-flex {
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
 .navigations-style a:link,
@@ -118,7 +109,7 @@ button {
   color: var(--text-color-accent);
 }
 .navigations-style {
-  padding: 32px 0 32px 0;
+  padding: 0;
   margin: 0;
 }
 .navigations-style ul {
@@ -129,14 +120,14 @@ button {
   padding: 0;
 }
 .contacts-style {
-  padding: 32px 0 32px 0;
+  padding: 0;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: auto;
 }
 .navigations-style li {
-  padding: 32px 50px 32px 0px;
+  padding: 0 50px 0 0;
   margin-top: 0;
   margin-right: 50px;
 }
@@ -147,7 +138,7 @@ button {
 
 /*стиль логотипа цвета задаются без переменных*/
 .container-logo {
-  padding: 24px 0 25px 0;
+  padding: 0;
   margin-right: 93px;
 }
 .logo-style {
@@ -241,10 +232,10 @@ button {
   list-style-type: none;
   width: 300px;
   padding: 0;
-  margin-right: 30px;
+  margin-right: 0px;
 }
-.features .features-item:last-child {
-  margin-right: 0;
+.features .features-item:not(:last-child) {
+  margin-right: 30px;
 }
 .features h3 {
   margin: 0;
@@ -283,10 +274,10 @@ button {
 .activities .activites-item {
   list-style-type: none;
   padding: 0;
-  margin-right: 30px;
+  margin-right: 0px;
 }
-.activities .activites-item:last-child {
-  margin-right: 0;
+.activities .activites-item:not(:last-child) {
+  margin-right: 30px;
 }
 /*Стили секции нашей команды*/
 .team {
@@ -341,11 +332,11 @@ button {
   border-bottom-right-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-right: 30px;
+  margin-right: 0px;
 }
 
-.team .team-item:last-child {
-  margin-right: 0;
+.team .team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-container {
   padding: 30px 0 30px 0;
@@ -472,11 +463,11 @@ button {
   display: block;
 }
 .adress-style .footer-item {
-  margin-bottom: 9px;
+  margin-bottom: 0px;
   list-style-type: none;
 }
-.adress-style .footer-item:last-child {
-  margin-bottom: 0;
+.adress-style .footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .adress-style {
   font-size: 14px;
