@@ -90,7 +90,6 @@ button {
   min-height: 80px;
 }
 .header-style .header-item {
-  list-style-type: none;
   margin: 0 50px 0 0;
   padding: 0;
 }
@@ -99,6 +98,7 @@ button {
 }
 .header-style-flex {
   display: flex;
+  list-style-type: none;
 }
 
 .navigations-style a:link,
@@ -119,7 +119,7 @@ button {
 }
 .navigations-style {
   padding: 32px 0 32px 0;
-  margin: 0 331px 0 0;
+  margin: 0;
 }
 .navigations-style ul {
   padding: 0;
@@ -130,7 +130,10 @@ button {
 }
 .contacts-style {
   padding: 32px 0 32px 0;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: auto;
 }
 .navigations-style li {
   padding: 32px 50px 32px 0px;
@@ -371,12 +374,12 @@ button {
   padding: 0;
   margin: 0px;
 }
-.portfolio-button-list .botton-item {
+.portfolio-button-list .botton-item:not(:last-child) {
   margin: 0 8px 0 0;
 }
-.portfolio-button-list .botton-item:last-child {
+/* .portfolio-button-list .botton-item:last-child {
   margin-right: 0;
-}
+} */
 
 .padding-portfolio-list {
   padding-left: 15px;
