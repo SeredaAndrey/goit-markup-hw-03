@@ -247,12 +247,13 @@ button {
 /*Стили секции виды деятельности*/
 .activities {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .activities img {
   display: block;
 }
 .padding-activities {
-  padding: 0 15px 94px 15px;
+  padding: 0 15px 0 15px;
 }
 .activities h2 {
   font-weight: 700;
@@ -349,9 +350,9 @@ button {
   padding-top: 94px;
 }
 .padding-portfolio-botton {
-  padding-left: 294px;
-  padding-right: 294px;
-  margin-bottom: 34px;
+  /* padding-left: 294px;
+  padding-right: 294px; */
+  margin-bottom: 50px;
 }
 .portfolio-style-title {
   display: none;
@@ -364,6 +365,7 @@ button {
   display: flex;
   padding: 0;
   margin: 0px;
+  justify-content: center;
 }
 .portfolio-button-list .botton-item:not(:last-child) {
   margin: 0 8px 0 0;
@@ -446,9 +448,10 @@ button {
 
 /*Стили подвала*/
 .footer-style {
-  min-height: 252px;
+  /* min-height: 252px; */
   background-color: var(--bgc-footer);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .padding-footer {
   padding-left: 15px;
